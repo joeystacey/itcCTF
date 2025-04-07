@@ -1,0 +1,135 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    height: 100%;
+  }
+  
+  body {
+    background-color: #f4f4f9;
+    color: #333;
+    line-height: 1.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    min-height: 100vh;
+  }
+  
+  .container {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #4A90E2;
+  }
+  
+  p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: #4A90E2;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .mystery-box {
+    width: 200px;
+    height: 200px;
+    margin: 30px auto;
+    background-color: #2C3E50;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+  }
+  
+  .mystery-box:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .fake-flag {
+    background-color: #D3D3D3;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #7F8C8D;
+    border-radius: 5px;
+    font-family: monospace;
+  }
+  
+  .easy {
+    background-color: #E74C3C;
+    color: #FFF;
+  }
+  
+  .medium {
+    background-color: #F39C12;
+    color: #FFF;
+  }
+  
+  .hard {
+    background-color: #2ECC71;
+    color: #FFF;
+  }
+  
+  .hidden-flag {
+    font-size: 1.2rem;
+    padding: 10px;
+    margin: 20px 0;
+    font-family: monospace;
+    color: transparent;
+    background-color: #7F8C8D;
+    border-radius: 5px;
+    visibility: hidden;
+    transition: visibility 0.2s ease-in-out;
+  }
+  
+  .mystery-box:hover + .hidden-flag {
+    visibility: visible;
+    color: #333;
+  }
+  
+  .container a:active {
+    color: #D35400;
+  }
+  
+  /* Hidden Folder Style (secret folder) */
+  .secret-folder {
+    display: none;
+  }
+  
+  .secret-folder a {
+    color: #27AE60;
+    font-size: 1rem;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .secret-folder a:hover {
+    text-decoration: underline;
+  }
+  
